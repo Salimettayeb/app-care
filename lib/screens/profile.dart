@@ -22,13 +22,21 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        backgroundColor:  Colors.lightBlue[300],
-        resizeToAvoidBottomInset: false,
 
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
+          body : Container(
+
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/img/bb.jpg"),
+            fit: BoxFit.cover,
+                   ),
+            ),
+             child: new Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: <Widget>[
+
+
+              Container(
               child: Stack(
                 children: <Widget>[
 
@@ -129,6 +137,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             )
           ],
-        ));
+        )));
   }
 }

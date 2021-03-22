@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui';
+
 
 class Home extends StatelessWidget {
   @override
@@ -8,7 +10,9 @@ class Home extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
 
-      home: new MyHomePage(),
+      home: new MyHomePage(
+
+      ),
     );
   }
 }
@@ -22,10 +26,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        backgroundColor: Colors.lightBlue[300],
-        body: new Container(
-            child: new Column(
 
+        body : Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/img/bb.jpg"),
+                  fit: BoxFit.cover,
+              ),
+            ),
+
+            child: new Column(
 
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -149,5 +159,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             )));
+
   }
 }

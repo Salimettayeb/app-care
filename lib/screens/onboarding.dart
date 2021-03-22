@@ -52,6 +52,7 @@ class Onboarding extends StatelessWidget {
                         borderRadius: BorderRadius.circular(4.0),
                       ),
                       child: Padding(
+
                           padding: EdgeInsets.only(
                               left: 16.0, right: 16.0, top: 12, bottom: 12),
                           child: Text("LOGIN",
